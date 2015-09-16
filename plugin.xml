@@ -14,6 +14,8 @@
         <feature name="CaratPlugin">
             <param name="android-package" value="org.carat.plugin.Echo"/>
         </feature>
+
+        <source-file src="src/org/carat/plugin/Echo.java" target-dir="org/carat/plugin/" /> 
     </config-file>
 
 </platform>
