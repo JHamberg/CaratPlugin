@@ -5,10 +5,8 @@
     <name>CaratPlugin</name>
     <description>Carat Plugin</description>
 
-    <asset src="www/carat.js" target="js/carat.js"/>
-
     <js-module src="www/carat.js" name="echo">
-        <clobbers target="echo" />
+        <clobbers target="carat" />
     </js-module>
 
 	<platform name="android">
