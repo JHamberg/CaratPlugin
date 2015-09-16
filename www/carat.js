@@ -1,10 +1,13 @@
-module.exports = carat = {
+var carat = {
 	echo: function(name, successCallback, errorCallback) {
         cordova.exec(
         	successCallback,
         	errorCallback,
         	"Echo",
         	"echo",
-        	[name]);
+        	[name]
+        );
 	}
 };
+
+module.exports = carat;
