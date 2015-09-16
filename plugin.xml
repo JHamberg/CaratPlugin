@@ -3,10 +3,12 @@
         id="org.carat.plugin"
         version="1.0.0">
     <name>CaratPlugin</name>
+    <license></license>
     <description>Carat Plugin</description>
+    <keywords>carat,plugin,phonegap</keywords>
 
-    <js-module src="www/carat.js" name="echo">
-        <clobbers target="carat" />
+    <js-module src="www/carat.js" name="CaratPlugin">
+        <clobbers target="window.carat" />
     </js-module>
 
 	<platform name="android">
