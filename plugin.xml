@@ -18,6 +18,6 @@
                 </feature>
         </config-file>
 
-        <source-file src="src/org/carat/plugin/Echo.java" />
+        <source-file src="src/org/carat/plugin/Echo.java" target-dir="org/carat/plugin/"/>
     </platform>
 </plugin>
