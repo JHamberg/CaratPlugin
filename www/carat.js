@@ -1,4 +1,6 @@
-module.exports = {
+var exec = require("cordova/exec");
+
+var Carat = {
 	echo: function(name, successCallback, errorCallback) {
         cordova.exec(
         	successCallback,
@@ -7,4 +9,6 @@ module.exports = {
         	"echo",
         	[name]);
 	}
-}
+};
+
+module.exports = Carat;

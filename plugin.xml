@@ -7,8 +7,8 @@
     <description>Carat Plugin</description>
     <keywords>carat,plugin,phonegap</keywords>
 
-    <js-module src="www/carat.js" name="Echo">
-        <clobbers target="carat" />
+    <js-module src="www/carat.js" name="Carat">
+        <clobbers target="Carat" />
     </js-module>
 
 	<platform name="android">
