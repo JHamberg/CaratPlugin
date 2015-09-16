@@ -1,3 +1,5 @@
+var exec = require("cordova/exec");
+
 var carat = {
 	echo: function(name, successCallback, errorCallback) {
         cordova.exec(
