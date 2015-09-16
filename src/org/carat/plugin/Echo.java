@@ -13,9 +13,12 @@
         public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
             if (action.equals("echo")) {
                 String name = data.getString(0);
-                callbackContext.success("Hello "+name);
+                String response = "Hello "+name;
+                callbackContext.success(response);
                 return true;
             }
-            return false;
+            else {
+                return false;
+            }
         }
     }

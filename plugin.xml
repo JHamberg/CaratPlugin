@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="org.carat.plugin"
-        version="1.0.0">
+        version="1.0.1">
     <name>CaratPlugin</name>
     <description>Carat Plugin</description>
     <keywords>carat,plugin,phonegap</keywords>
 
-    <js-module src="www/carat.js" name="Echo">
+    <js-module src="carat.js" name="Echo">
         <clobbers target="carat" />
     </js-module>
 
@@ -17,6 +17,6 @@
                 </feature>
         </config-file>
 
-        <source-file src="src/org/carat/plugin/Echo.java" target-dir="src/org/carat/plugin/"/>
+        <source-file src="src/org/carat/plugin/Echo.java" target-dir="src/org/carat/plugin"/>
     </platform>
 </plugin>
