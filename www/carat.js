@@ -1,5 +1,5 @@
 var carat = {
-    echo: function (name, successCallback, errorCallback) {
+    echo: function(name, successCallback, errorCallback) {
         cordova.exec(
         	successCallback,
         	errorCallback,
