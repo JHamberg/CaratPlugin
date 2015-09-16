@@ -7,13 +7,13 @@
     <description>Carat Plugin</description>
     <keywords>carat,plugin,phonegap</keywords>
 
-    <js-module src="www/carat.js" name="CaratPlugin">
-        <clobbers target="window.carat" />
+    <js-module src="www/carat.js" name="Echo">
+        <clobbers target="carat" />
     </js-module>
 
 	<platform name="android">
         <config-file target="config.xml" parent="/*">
-                <feature name="CaratPlugin">
+                <feature name="Echo">
                     <param name="android-package" value="org.carat.plugin.Echo"/>
                 </feature>
         </config-file>
