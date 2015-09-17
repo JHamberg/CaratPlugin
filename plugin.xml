@@ -16,6 +16,9 @@
                 </feature>
         </config-file>
 
+        <asset src="carat.js" target="js/carat.js" />
+
+        <!-- Unused -->
         <js-module src="carat.js" name="Echo">
             <clobbers target="carat" />
         </js-module>
