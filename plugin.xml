@@ -10,10 +10,10 @@
 
 	<platform name="android">
         <config-file target="config.xml" parent="/*">
-                <feature name="Echo">
-                    <param name="android-package" value="org.carat20.client.Echo"/>
-		    <param name="onload" value="true" />
-                </feature>
+            <feature name="CaratPlugin">
+                <param name="android-package" value="org.carat.plugin.Echo"/>
+                <param name="onload" value="true" />
+            </feature>
         </config-file>
 
         <asset src="carat.js" target="js/carat.js" />

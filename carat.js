@@ -1,14 +1,10 @@
-var cordova = require("cordova");
-var exec = require("cordova/exec");
-
-var carat = {
+module.exports = {
 	echo: function(name, success, error) {
+		var exec = require("cordova/exec");
         cordova.exec(success,
         	error,
-        	"Echo",
+        	"CaratPlugin",
         	"echo",
         	[name]);
 	}
 };
-
-module.exports = carat;
