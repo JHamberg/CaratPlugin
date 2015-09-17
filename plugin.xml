@@ -9,20 +9,19 @@
     </engines>
 
 	<platform name="android">
-        <config-file target="config.xml" parent="/*">
+        <config-file target="res/xml/config.xml" parent="/*">
             <feature name="CaratPlugin">
                 <param name="android-package" value="org.carat.plugin.Echo"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-
-        <asset src="carat.js" target="js/carat.js" />
-
         <!-- Unused -->
         <js-module src="carat.js" name="Echo">
             <clobbers target="carat" />
         </js-module>
 
         <source-file src="src/org/carat/plugin/Echo.java" target-dir="src/org/carat/plugin"/>
+
+        <asset src="carat.js" target="js/carat.js" />
     </platform>
 </plugin>
