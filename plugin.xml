@@ -8,10 +8,6 @@
     	<engine name="cordova-android" version=">=4.0.0-dev" />
     </engines>
 
-    <js-module src="carat.js" name="Echo">
-        <clobbers target="carat" />
-    </js-module>
-
 	<platform name="android">
         <config-file target="config.xml" parent="/*">
                 <feature name="Echo">
@@ -19,6 +15,10 @@
 		    <param name="onload" value="true" />
                 </feature>
         </config-file>
+
+        <js-module src="carat.js" name="Echo">
+            <clobbers target="carat" />
+        </js-module>
 
         <source-file src="src/org/carat/plugin/Echo.java" target-dir="src/org/carat/plugin"/>
     </platform>
