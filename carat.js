@@ -1,10 +1,11 @@
 module.exports = {
 	echo: function(name, success, error) {
 		var exec = require("cordova/exec");
-        cordova.exec(success,
+        exec(success,
         	error,
         	"CaratPlugin",
         	"echo",
-        	[name]);
+        	[name]
+        );
 	}
 };

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="org.carat.plugin"
-        version="1.0.2">
+        version="1.0.0">
     <name>CaratPlugin</name>
 
     <engines>
@@ -9,19 +9,17 @@
     </engines>
 
 	<platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="CaratPlugin">
-                <param name="android-package" value="org.carat.plugin.Echo"/>
+                <param name="android-package" value="org.carat20.client.Echo"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-
-        <asset src="carat.js" target="carat.js" />
 
         <js-module src="carat.js" name="Echo">
             <clobbers target="carat" />
         </js-module>
 
-        <source-file src="src/org/carat/plugin/Echo.java" target-dir="src/org/carat/plugin"/>
+        <source-file src="src/Echo.java" target-dir="src/org/carat20/client"/>
     </platform>
 </plugin>
