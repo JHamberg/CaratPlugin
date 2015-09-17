@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="org.carat.plugin"
-        version="1.0.1">
+        version="1.0.2">
     <name>CaratPlugin</name>
 
     <engines>
@@ -15,13 +15,13 @@
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <!-- Unused -->
+
+        <asset src="carat.js" target="carat.js" />
+
         <js-module src="carat.js" name="Echo">
             <clobbers target="carat" />
         </js-module>
 
         <source-file src="src/org/carat/plugin/Echo.java" target-dir="src/org/carat/plugin"/>
-
-        <asset src="carat.js" target="js/carat.js" />
     </platform>
 </plugin>
